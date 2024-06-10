@@ -1,0 +1,7 @@
+{
+  "name": "changeset-test",
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.5"
+  }
+}
