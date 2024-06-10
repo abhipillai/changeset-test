@@ -14,12 +14,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "changeset-test",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "package-four",\
+        "reference": "workspace:packages/package-four"\
+      },\
+      {\
+        "name": "package-one",\
+        "reference": "workspace:packages/package-one"\
+      },\
+      {\
+        "name": "package-three",\
+        "reference": "workspace:packages/package-three"\
+      },\
+      {\
+        "name": "package-two",\
+        "reference": "workspace:packages/package-two"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["changeset-test", ["workspace:."]]\
+      ["changeset-test", ["workspace:."]],\
+      ["package-four", ["workspace:packages/package-four"]],\
+      ["package-one", ["workspace:packages/package-one"]],\
+      ["package-three", ["workspace:packages/package-three"]],\
+      ["package-two", ["workspace:packages/package-two"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -2025,6 +2045,43 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["p-try", "npm:2.2.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["package-four", [\
+        ["workspace:packages/package-four", {\
+          "packageLocation": "./packages/package-four/",\
+          "packageDependencies": [\
+            ["package-four", "workspace:packages/package-four"],\
+            ["package-one", "workspace:packages/package-one"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["package-one", [\
+        ["workspace:packages/package-one", {\
+          "packageLocation": "./packages/package-one/",\
+          "packageDependencies": [\
+            ["package-one", "workspace:packages/package-one"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["package-three", [\
+        ["workspace:packages/package-three", {\
+          "packageLocation": "./packages/package-three/",\
+          "packageDependencies": [\
+            ["package-three", "workspace:packages/package-three"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["package-two", [\
+        ["workspace:packages/package-two", {\
+          "packageLocation": "./packages/package-two/",\
+          "packageDependencies": [\
+            ["package-two", "workspace:packages/package-two"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["parse-json", [\
