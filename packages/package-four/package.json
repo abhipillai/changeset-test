@@ -3,6 +3,6 @@
     "version": "1.0.0",
     "main": "index.js",
     "dependencies": {
-        "package-one": "1.0."
+        "package-one": "1.0.0"
     }
 }
