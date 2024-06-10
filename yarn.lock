@@ -1778,6 +1778,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"package-four@workspace:packages/package-four":
+  version: 0.0.0-use.local
+  resolution: "package-four@workspace:packages/package-four"
+  dependencies:
+    package-one: 1.0.0
+  languageName: unknown
+  linkType: soft
+
+"package-one@1.0.0, package-one@workspace:packages/package-one":
+  version: 0.0.0-use.local
+  resolution: "package-one@workspace:packages/package-one"
+  languageName: unknown
+  linkType: soft
+
+"package-three@workspace:packages/package-three":
+  version: 0.0.0-use.local
+  resolution: "package-three@workspace:packages/package-three"
+  languageName: unknown
+  linkType: soft
+
+"package-two@workspace:packages/package-two":
+  version: 0.0.0-use.local
+  resolution: "package-two@workspace:packages/package-two"
+  languageName: unknown
+  linkType: soft
+
 "parse-json@npm:^5.0.0":
   version: 5.2.0
   resolution: "parse-json@npm:5.2.0"
